@@ -8,7 +8,7 @@
 " Basic options
 " -----------------------
 
-" Turn on syntax highlight
+" Syntax highlight
 syntax on
 
 " Auto indent
@@ -22,6 +22,9 @@ set hls
 
 " Incremental search
 set is
+
+" Hybrid line numbers
+set nu rnu
 
 " Set map leader
 let mapleader='\'
@@ -50,8 +53,24 @@ Plug 'tomlion/vim-solidity'
 " Interactive Coq Proofs
 Plug 'whonore/Coqtail'
 
+" Retro groove color scheme
+Plug 'morhetz/gruvbox'
+
 " Initialize plugin system
 call plug#end()
+
+" -----------------------
+" Color scheme
+" -----------------------
+
+" Setting dark mode
+set background=dark
+
+" Configuring color scheme
+let g:gruvbox_contrast_dark='soft'
+
+" Setting color scheme
+colorscheme gruvbox
 
 " -----------------------
 " Advanced options
