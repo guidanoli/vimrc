@@ -29,6 +29,9 @@ set nu rnu
 " Set map leader
 let mapleader='\'
 
+" Set max no of tabs
+set tabpagemax=100
+
 " If vim suports persisent undo
 if has('persistent_undo')
 
@@ -55,6 +58,13 @@ Plug 'whonore/Coqtail'
 
 " Retro groove color scheme
 Plug 'morhetz/gruvbox'
+
+" A minimalist task manager for vim
+Plug 'vuciv/vim-bujo'
+
+" CamelCase motion through words
+Plug 'bkad/CamelCaseMotion'
+let g:camelcasemotion_key = '<leader>'
 
 " Initialize plugin system
 call plug#end()
