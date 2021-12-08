@@ -61,10 +61,11 @@ Plug 'morhetz/gruvbox'
 
 " A minimalist task manager for vim
 Plug 'vuciv/vim-bujo'
+let g:bujo#window_width = 80
 
 " CamelCase motion through words
 Plug 'bkad/CamelCaseMotion'
-let g:camelcasemotion_key = '<leader>'
+let g:camelcasemotion_key = ';'
 
 " Initialize plugin system
 call plug#end()
