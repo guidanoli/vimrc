@@ -23,8 +23,8 @@ set hls
 " Incremental search
 set is
 
-" Hybrid line numbers
-set nu rnu
+" Absolute line numbers
+set nu
 
 " Set map leader
 let mapleader='\'
@@ -35,8 +35,17 @@ set tabpagemax=100
 " If vim suports persisent undo
 if has('persistent_undo')
 
+	" Define target path for undo files
+	let target_path = expand('~/.vim/undo')
+
+	" Create the directory if the location
+	" does not exist yet
+	if !isdirectory(target_path)
+		call system('mkdir -p ' . target_path)
+	endif
+
 	" Set directory for undo files
-	set undodir=$HOME/.vim/undo
+	let &undodir = target_path
 
 	" Allow persistent undo file storage
 	set undofile
