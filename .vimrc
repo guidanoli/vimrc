@@ -76,6 +76,12 @@ let g:bujo#window_width = 80
 Plug 'bkad/CamelCaseMotion'
 let g:camelcasemotion_key = ';'
 
+" Vim syntax for TOML
+Plug 'cespare/vim-toml', { 'branch': 'main' }
+
+" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box. 
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
 " Initialize plugin system
 call plug#end()
 
