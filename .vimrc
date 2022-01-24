@@ -29,9 +29,6 @@ set nu
 " Set map leader
 let mapleader='\'
 
-" Set max no of tabs
-set tabpagemax=100
-
 " If vim suports persisent undo
 if has('persistent_undo')
 
@@ -81,6 +78,7 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box. 
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+let g:pymode_lint_unmodified = 0
 
 " Initialize plugin system
 call plug#end()
