@@ -4,9 +4,9 @@
 " Contact: guidanoli@hotmail.com
 " --------------------------------
 
-" -----------------------
-" Automatic installation
-" -----------------------
+" ----------------------------------
+" Automatic installation of vim-plug
+" ----------------------------------
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -66,8 +66,8 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-" Syntax highlight for Solidity
-Plug 'tomlion/vim-solidity'
+" Vim syntax file for solidity
+Plug 'TovarishFin/vim-solidity'
 
 " Interactive Coq Proofs
 Plug 'whonore/Coqtail'
