@@ -90,6 +90,12 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 let g:pymode_lint_unmodified = 0
 
+" Typescript syntax files for Vim
+Plug 'leafgarland/typescript-vim'
+
+" Better Lua syntax highlighting in Vim/NeoVim
+Plug 'euclidianAce/BetterLua.vim'
+
 " Initialize plugin system
 call plug#end()
 
