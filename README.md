@@ -8,3 +8,26 @@ When I then booted my freshly installed Linux machine, I noticed two things that
 The vim editor program (which I easily and readily installed with apt-get), and my `.vimrc` file.
 The latter, as you might have guessed, was not in any older backup of mine.
 That's the reason why I decided to make it here public for whoever is interested, and for myself, if that ever happens again.
+
+## Setup
+
+Clone this repository anywhere you like...
+
+```sh
+git clone https://github.com/guidanoli/vimrc.git Repos/guidanoli/vimrc
+```
+
+Link your `.vimrc` to it...
+
+```sh
+ln -s Repos/guidanoli/vimrc/.vimrc .vimrc
+```
+
+Then run `vi` to install all plugins...
+
+
+```sh
+vi
+```
+
+And it will install VimPlug (if don't have it yet) and the plugins! (requires `curl` [[1]](https://github.com/curl/curl))
