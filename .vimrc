@@ -116,8 +116,8 @@ colorscheme gruvbox
 " Key mappings
 " -----------------------
 
-" Remove search highlight with Escape
-nmap <silent> <Esc> :noh<CR>
+" Clear search highlight
+nmap <silent> <Leader>n :noh<CR>
 
 " -----------------------
 " Advanced options
