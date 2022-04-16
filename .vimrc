@@ -113,6 +113,13 @@ let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox
 
 " -----------------------
+" Key mappings
+" -----------------------
+
+" Remove search highlight with Escape
+nmap <silent> <Esc> :noh<CR>
+
+" -----------------------
 " Advanced options
 " -----------------------
 
