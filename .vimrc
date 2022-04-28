@@ -95,6 +95,11 @@ Plug 'leafgarland/typescript-vim'
 
 " Better Lua syntax highlighting in Vim/NeoVim
 Plug 'euclidianAce/BetterLua.vim'
+let g:lua_subversion = 4
+
+" fzf <3 vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -118,6 +123,15 @@ colorscheme gruvbox
 
 " Clear search highlight
 nmap <silent> <Leader>n :noh<CR>
+
+" Go to next buffer
+nmap <silent> <Leader>l :bn<CR>
+
+" Go to previous buffer
+nmap <silent> <Leader>h :bp<CR>
+
+" Run fzf on current buffers
+nmap <silent> <Leader>f :Buffers<CR>
 
 " -----------------------
 " Advanced options
