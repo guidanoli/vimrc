@@ -11,16 +11,22 @@ That's the reason why I decided to make it here public for whoever is interested
 
 ## Setup
 
+Install the dependencies...
+
+```sh
+sudo apt install curl vim git
+```
+
 Clone this repository anywhere you like...
 
 ```sh
-git clone https://github.com/guidanoli/vimrc.git Repos/guidanoli/vimrc
+git clone https://github.com/guidanoli/vimrc.git ~/Repos/guidanoli/vimrc
 ```
 
 Link your `.vimrc` to it...
 
 ```sh
-ln -s Repos/guidanoli/vimrc/.vimrc .vimrc
+ln -s ~/Repos/guidanoli/vimrc/.vimrc ~/.vimrc
 ```
 
 Then run `vi` to install all plugins...
@@ -30,4 +36,4 @@ Then run `vi` to install all plugins...
 vi
 ```
 
-And it will install VimPlug (if don't have it yet) and the plugins! (requires `curl` [[1]](https://github.com/curl/curl))
+And it will install VimPlug (if don't have it yet) and the plugins!
