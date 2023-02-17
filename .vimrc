@@ -75,10 +75,6 @@ Plug 'whonore/Coqtail'
 " Retro groove color scheme
 Plug 'morhetz/gruvbox'
 
-" A minimalist task manager for vim
-Plug 'vuciv/vim-bujo'
-let g:bujo#window_width = 80
-
 " CamelCase motion through words
 Plug 'bkad/CamelCaseMotion'
 let g:camelcasemotion_key = ';'
@@ -88,7 +84,6 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box. 
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-let g:pymode_lint_unmodified = 0
 
 " Typescript syntax files for Vim
 Plug 'leafgarland/typescript-vim'
@@ -96,10 +91,6 @@ Plug 'leafgarland/typescript-vim'
 " Better Lua syntax highlighting in Vim/NeoVim
 Plug 'euclidianAce/BetterLua.vim'
 let g:lua_subversion = 4
-
-" fzf <3 vim
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
