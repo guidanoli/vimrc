@@ -88,6 +88,9 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " Typescript syntax files for Vim
 Plug 'leafgarland/typescript-vim'
 
+" Vim syntax file for the TPTP logic format
+Plug 'c-cube/vim-tptp'
+
 " Better Lua syntax highlighting in Vim/NeoVim
 Plug 'euclidianAce/BetterLua.vim'
 let g:lua_subversion = 4
